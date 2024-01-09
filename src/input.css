@@ -42,7 +42,7 @@
   .get-1 {
     @apply hidden md:flex;
     @apply text-base md:text-[13px] lg:text-[13px] xl:text-sm;
-    @apply py-2 px-5 xl:py-3 xl:px-8 bg-orange-600 rounded-full;
+    @apply py-2 px-5 xl:py-3 xl:px-8 bg-[rgb(243,96,60)] rounded-full;
     @apply text-[hsl(13,_100%,_96%)];
   }
 
@@ -52,30 +52,30 @@
     ===========================
     */
   .second-box {
-    @apply flex justify-normal md:justify-between flex-col-reverse md:flex-row;
+    @apply flex justify-center md:justify-between flex-col-reverse md:flex-row;
   }
   .sb-first {
     @apply basis-full flex flex-col md:basis-[47%] my-auto;
   }
 
   .sb-header {
-    @apply font-bold text-3xl md:text-4xl lg:text-5xl xl:text-[54px];
+    @apply font-bold text-3xl md:text-[25px] lg:text-[34px] xl:text-6xl;
     @apply text-center md:text-left;
-    @apply text-[hsl(233,_12%,_13%)] font-bold;
-    @apply my-2 md:my-1 lg:my-3 xl:my-4;
+    @apply text-[hsl(233,_12%,_13%)];
+    @apply my-2 md:my-1 lg:my-2 xl:my-3;
   }
   .sb-content {
-    @apply text-[hsl(227,_12%,_61%)] text-base lg:text-lg;
+    @apply text-[hsl(227,_12%,_61%)] text-[15px] lg:text-lg;
     @apply text-center md:text-left mr-0 sm:mr-3 md:mr-6 lg:mr-16 xl:mr-36;
-    @apply my-2 md:my-1 lg:my-3 xl:my-4;
+    @apply my-2 md:my-1 lg:my-2 xl:my-3;
   }
   .get-2 {
     @apply inline-block;
     @apply text-base md:text-[13px] lg:text-[13px] xl:text-sm;
-    @apply py-2 px-5 xl:py-3 xl:px-8 bg-orange-600 rounded-full;
+    @apply py-2 px-5 xl:py-3 xl:px-8 bg-[rgb(243,96,60)] rounded-full;
     @apply text-[hsl(13,_100%,_96%)];
     @apply self-center md:self-baseline;
-    @apply my-2 md:my-1 lg:my-3 xl:my-4;
+    @apply my-2 md:my-1 lg:my-2 xl:my-3;
   }
   .sb-second {
     @apply basis-full md:basis-[47%];
@@ -100,5 +100,32 @@
 
   .tb-second {
     @apply basis-full md:basis-[47%];
+  }
+
+  /* 
+    ===========================
+    FIFTH BOX
+    ===========================
+    */
+
+  .fifth-box {
+    @apply bg-[rgb(243,96,60)] bg-cover bg-no-repeat bg-center;
+    @apply flex flex-col md:flex-row justify-center md:justify-between;
+  }
+  .ffb-first {
+    @apply basis-full md:basis-[45%] text-center md:text-left;
+    @apply text-[hsl(13,_100%,_96%)];
+    @apply font-bold text-3xl md:text-2xl lg:text-3xl xl:text-4xl;
+    @apply my-4 md:my-0 mt-7 md:mt-0 !important; 
+  }
+
+  .get-4 {
+    @apply inline-block;
+    @apply text-base md:text-[13px] lg:text-[13px] xl:text-sm;
+    @apply py-2 px-5 xl:py-3 xl:px-8 rounded-full;
+    @apply bg-[hsl(13,_100%,_96%)] text-[rgb(243,96,60)];
+    @apply self-center md:self-baseline my-auto !important;
+    @apply my-4 md:my-0 mb-7 md:mb-0 !important;
+    /* @apply my-2 md:my-1 lg:my-3 xl:my-4; */
   }
 }
