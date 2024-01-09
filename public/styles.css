@@ -1220,14 +1220,12 @@ video {
   background-color: hsl(13 100% 96% / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(243 96 60 / var(--tw-text-opacity));
-  margin-top: auto !important;
-  margin-bottom: auto !important;
   align-self: center !important;
 }
 
 @media (min-width: 768px) {
   .get-4 {
-    align-self: baseline !important;
+    align-self: center !important;
   }
 }
 
