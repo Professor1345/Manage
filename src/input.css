@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .genPadding {
+    @apply px-[24px] sm:px-9 md:px-16 lg:px-24 xl:px-[165px];
+    @apply py-6 sm:py-7 md:py-9 lg:py-14 xl:py-16;
+  }
+  .genMargin {
+    @apply mx-[24px] sm:mx-9 md:mx-16 lg:mx-24 xl:mx-[165px];
+    @apply my-9 sm:my-9 md:my-9 lg:my-14 xl:my-16;
+  }
+
+  /* 
+    ===========================
+    FIRST BOX (HEADER)
+    ===========================
+    */
+
+  .header {
+    @apply flex justify-between items-center;
+    @apply flex-row;
+    /* @apply bg-blue-700; */
+  }
+  .logo {
+    /* width="146" height="24" */
+    @apply w-[110px] h-[14px]  md:w-[125px] md:h-[13px] lg:w-[140px] lg:h-[20px] xl:w-auto xl:h-auto !important;
+    @apply my-auto;
+  }
+  .navbar-button {
+    @apply flex md:hidden;
+  }
+  .navbar {
+    @apply hidden md:flex;
+    @apply text-base md:text-[15px] lg:text-sm xl:text-sm;
+  }
+  .navbar a {
+    @apply md:mx-[7px] lg:mx-5 xl:mx-4;
+    @apply text-[hsl(233,_12%,_13%)] hover:text-[hsl(227,_12%,_61%)];
+  }
+  .get-1 {
+    @apply hidden md:flex;
+    @apply text-base md:text-[13px] lg:text-[13px] xl:text-sm;
+    @apply py-2 px-5 xl:py-3 xl:px-8 bg-orange-600 rounded-full;
+    @apply text-[hsl(13,_100%,_96%)];
+  }
+
+  /* 
+    ===========================
+    SECOND BOX
+    ===========================
+    */
+  .second-box {
+    @apply flex justify-normal md:justify-between flex-col-reverse md:flex-row;
+  }
+  .sb-first {
+    @apply basis-full flex flex-col md:basis-[47%] my-auto;
+  }
+
+  .sb-header {
+    @apply font-bold text-3xl md:text-4xl lg:text-5xl xl:text-[54px];
+    @apply text-center md:text-left;
+    @apply text-[hsl(233,_12%,_13%)] font-bold;
+    @apply my-2 md:my-1 lg:my-3 xl:my-4;
+  }
+  .sb-content {
+    @apply text-[hsl(227,_12%,_61%)] text-base lg:text-lg;
+    @apply text-center md:text-left mr-0 sm:mr-3 md:mr-6 lg:mr-16 xl:mr-36;
+    @apply my-2 md:my-1 lg:my-3 xl:my-4;
+  }
+  .get-2 {
+    @apply inline-block;
+    @apply text-base md:text-[13px] lg:text-[13px] xl:text-sm;
+    @apply py-2 px-5 xl:py-3 xl:px-8 bg-orange-600 rounded-full;
+    @apply text-[hsl(13,_100%,_96%)];
+    @apply self-center md:self-baseline;
+    @apply my-2 md:my-1 lg:my-3 xl:my-4;
+  }
+  .sb-second {
+    @apply basis-full md:basis-[47%];
+  }
+  .sb-second img {
+    @apply object-cover object-center min-w-full min-h-full;
+  }
+
+  /* 
+    ===========================
+    THIRD BOX
+    ===========================
+    */
+
+  .third-box {
+    @apply bg-slate-500;
+    @apply flex flex-col md:flex-row justify-between;
+  }
+  .tb-first {
+    @apply basis-full md:basis-[47%];
+  }
+
+  .tb-second {
+    @apply basis-full md:basis-[47%];
+  }
+}
