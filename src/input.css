@@ -26,7 +26,7 @@
   .logo {
     /* width="146" height="24" */
     @apply w-[110px] h-[14px]  md:w-[125px] md:h-[13px] lg:w-[140px] lg:h-[20px] xl:w-auto xl:h-auto !important;
-    @apply my-auto;
+    @apply my-auto flex justify-center items-center;
   }
   .navbar-button {
     @apply flex md:hidden;
@@ -116,7 +116,7 @@
     @apply basis-full md:basis-[45%] text-center md:text-left;
     @apply text-[hsl(13,_100%,_96%)];
     @apply font-bold text-3xl md:text-2xl lg:text-3xl xl:text-4xl;
-    @apply my-4 md:my-0 mt-7 md:mt-0 !important; 
+    @apply my-4 md:my-0 mt-7 md:mt-0 !important;
   }
 
   .get-4 {

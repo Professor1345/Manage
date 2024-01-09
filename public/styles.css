@@ -654,6 +654,9 @@ video {
 .logo {
   margin-top: auto;
   margin-bottom: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar-button {
