@@ -1393,7 +1393,7 @@ video {
 @media (min-width: 1280px) {
   .tb-second > div {
     margin-top: 1.25rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.25rem;
   }
 }
 
@@ -1521,8 +1521,8 @@ video {
 
 @media (min-width: 1280px) {
   .tb-second div div:nth-child(2) {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 

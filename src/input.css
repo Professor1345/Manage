@@ -132,7 +132,7 @@
   /* Over-all Container for Third Box Second */
   .tb-second > div {
     /* @apply my-3 md:my-6; */
-    @apply my-6 md:my-2 md:mb-4 lg:my-3 lg:mb-6 xl:my-5 xl:mb-8;
+    @apply my-6 md:my-2 md:mb-4 lg:my-3 lg:mb-6 xl:my-5 xl:mb-9;
   }
 
   /* Header Container */
@@ -161,7 +161,7 @@
   /* Content */
   .tb-second div div:nth-child(2) {
     @apply text-[hsl(227,_12%,_61%)];
-    @apply text-[15px] lg:text-base xl:text-lg;
+    @apply text-[15px] lg:text-base xl:text-base;
     @apply ml-0 md:ml-[75px] lg:ml-20 xl:ml-[90px];
     @apply my-2 md:my-2 lg:my-2 xl:my-2;
     @apply text-center md:text-left;
