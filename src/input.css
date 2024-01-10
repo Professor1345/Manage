@@ -4,8 +4,8 @@
 
 @layer components {
   .genPadding {
-    @apply px-[24px] sm:px-9 md:px-16 lg:px-24 xl:px-[165px];
-    @apply py-6 sm:py-7 md:py-9 lg:py-14 xl:py-16;
+    @apply px-6 sm:px-9 md:px-16 lg:px-24 xl:px-[165px];
+    @apply py-6 sm:py-7 md:py-9 lg:py-14 xl:py-14;
   }
   .genMargin {
     @apply mx-[24px] sm:mx-9 md:mx-16 lg:mx-24 xl:mx-[165px];
@@ -59,13 +59,14 @@
   }
 
   .sb-header {
-    @apply font-bold text-3xl md:text-[25px] lg:text-[34px] xl:text-5xl;
+    @apply font-bold text-3xl md:text-[25px] lg:text-[34px] xl:text-[54px] xl:leading-tight;
     @apply text-center md:text-left;
     @apply text-[hsl(233,_12%,_13%)];
     @apply my-2 md:my-1 lg:my-2 xl:my-3;
   }
   .sb-content {
-    @apply text-[hsl(227,_12%,_61%)] text-[15px] lg:text-lg;
+    @apply text-[hsl(227,_12%,_61%)];
+    @apply text-[15px] lg:text-base xl:text-lg;
     @apply text-center md:text-left mr-0 sm:mr-3 md:mr-6 lg:mr-16 xl:mr-36;
     @apply my-2 md:my-1 lg:my-2 xl:my-3;
   }
@@ -78,7 +79,7 @@
     @apply my-2 md:my-1 lg:my-2 xl:my-3;
   }
   .sb-second {
-    @apply basis-full md:basis-[47%];
+    @apply basis-full md:basis-[50%];
   }
   .sb-second img {
     @apply object-cover object-center min-w-full min-h-full;
@@ -90,18 +91,82 @@
     ===========================
     */
 
+  .genPaddingTB {
+    @apply px-6 sm:px-9 md:px-16 lg:px-24 xl:px-[165px];
+    @apply py-6 sm:py-7 md:py-9 lg:py-14 xl:py-14;
+    @apply pr-0 sm:pr-0 md:pr-16 lg:pr-24 xl:pr-[165px];
+  }
+
   .third-box {
     @apply bg-slate-500;
     @apply flex flex-col md:flex-row justify-between;
   }
   .tb-first {
-    @apply basis-full md:basis-[47%];
+    @apply basis-full md:basis-[45%];
+    @apply text-center md:text-left;
+    @apply md:my-1 lg:my-2 xl:my-3;
+    @apply pr-6 sm:pr-9;
+  }
+  .tbf-header {
+    @apply font-bold text-2xl md:text-xl lg:text-3xl xl:text-[40px] xl:leading-[3rem] !important;
+    @apply my-4 md:my-1 !important;
+    @apply text-[hsl(233,_12%,_13%)];
+  }
+  .tbf-content {
+    @apply text-[hsl(227,_12%,_61%)];
+    @apply text-[15px] lg:text-base xl:text-lg;
+    @apply text-center md:text-left;
+    @apply my-2 md:my-1 lg:my-3 xl:my-4;
+    @apply mr-0 md:mr-11 lg:mr-20 xl:mr-32 !important;
   }
 
   .tb-second {
-    @apply basis-full md:basis-[47%];
+    @apply basis-full md:basis-[49%];
+    /* @apply bg-slate-400; */
+    /* @apply md:my-1 lg:my-2 xl:my-3; */
+  }
+  .tb-second div div:nth-child(1) {
+    @apply flex flex-row;
   }
 
+  /* Over-all Container for Third Box Second */
+  .tb-second > div {
+    /* @apply my-3 md:my-6; */
+    @apply my-6 md:my-2 md:mb-4 lg:my-3 lg:mb-6 xl:my-5 xl:mb-8;
+  }
+
+  /* Header Container */
+  .tb-second div div:nth-child(1) {
+    @apply bg-[rgb(255,240,235)] md:bg-transparent;
+    @apply rounded-l-full;
+    @apply flex flex-row;
+    @apply z-30;
+  }
+  /* Header Number */
+  .tb-second div div div:nth-child(1) {
+    @apply bg-[rgb(243,96,60)] !important;
+    @apply text-[hsl(13,_100%,_96%)] text-center justify-start items-center self-stretch;
+    @apply py-1 px-5 lg:px-5 xl:py-2 xl:px-6 rounded-full;
+  }
+
+  /* Header */
+  .tb-second div div div:nth-child(2) {
+    @apply text-[hsl(233,_12%,_13%)];
+    @apply ml-2 md:ml-4 lg:ml-5 xl:ml-6;
+    @apply font-bold;
+    @apply self-center my-auto xl:my-1;
+    /* @apply text-base lg:text-lg; */
+  }
+
+  /* Content */
+  .tb-second div div:nth-child(2) {
+    @apply text-[hsl(227,_12%,_61%)];
+    @apply text-[15px] lg:text-base xl:text-lg;
+    @apply ml-0 md:ml-[75px] lg:ml-20 xl:ml-[90px];
+    @apply my-2 md:my-2 lg:my-2 xl:my-2;
+    @apply text-center md:text-left;
+    @apply pr-6 sm:pr-9;
+  }
   /* 
     ===========================
     FIFTH BOX
@@ -109,18 +174,37 @@
     */
 
   .fifth-box {
-    @apply bg-[rgb(243,96,60)] bg-cover bg-no-repeat bg-center;
+    @apply bg-[rgb(243,96,60)];
     @apply flex flex-col md:flex-row justify-center md:justify-between;
+    @apply relative bg-opacity-100 bg-contain bg-repeat bg-center;
+    @apply overflow-hidden !important;
   }
+
+  .fifth-box img.a {
+    @apply absolute z-10;
+    @apply opacity-10 overflow-hidden;
+    @apply md:w-2/5 top-5 -left-[80%] md:-top-1/3 md:left-auto;
+  }
+  .fifth-box img.b {
+    @apply absolute z-10 hidden md:block;
+    @apply opacity-10 -right-[25%] bottom-16 w-2/5 overflow-hidden;
+  }
+  /* .pre-fifthBox{
+    @apply bg-[rgb(243,96,60)] min-w-full;
+  } */
+  /* .fifth-box::before{
+    @apply content-[''] absolute z-20 min-h-[50px] text-blue-500 min-w-full bg-[url('./images/bg-tablet-pattern.svg')];
+    @apply bg-cover bg-no-repeat bg-center;
+  } */
   .ffb-first {
     @apply basis-full md:basis-[45%] text-center md:text-left;
-    @apply text-[hsl(13,_100%,_96%)];
+    @apply text-[hsl(13,_100%,_96%)] z-20;
     @apply font-bold text-3xl md:text-2xl lg:text-3xl xl:text-4xl;
     @apply my-4 md:my-0 mt-7 md:mt-0 !important;
   }
 
   .get-4 {
-    @apply inline-block;
+    @apply inline-block z-20;
     @apply text-base md:text-[13px] lg:text-[13px] xl:text-sm;
     @apply py-2 px-5 xl:py-3 xl:px-8 rounded-full;
     @apply bg-[hsl(13,_100%,_96%)] text-[rgb(243,96,60)];
