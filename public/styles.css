@@ -1493,7 +1493,15 @@ video {
 }
 
 .tb-second div div div:nth-child(2) {
-  /* @apply text-base lg:text-lg; */
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .tb-second div div div:nth-child(2) {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 /* Content */

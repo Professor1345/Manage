@@ -155,7 +155,7 @@
     @apply ml-2 md:ml-4 lg:ml-5 xl:ml-6;
     @apply font-bold;
     @apply self-center my-auto xl:my-1;
-    /* @apply text-base lg:text-lg; */
+    @apply text-base lg:text-lg;
   }
 
   /* Content */
