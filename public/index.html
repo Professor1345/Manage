@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
+    <script src="code.js"></script>
     <title>Manage</title>
   </head>
   <!-- class=" min-h-[100vh] min-w-full bg-no-repeat bg-cover bg-center bg-[url('images/bg-tablet-pattern.svg')]" -->
@@ -26,7 +26,22 @@
         <div class="logo">
           <img src="./images/logo.svg" alt="manage" srcset="" />
         </div>
-        <div class="navbar-button">=</div>
+        <div class="navbar-button">
+          <img
+            src="./images/icon-hamburger.svg"
+            onclick="openButton()"
+            id="open"
+            alt="open"
+            srcset=""
+          />
+          <img
+            src="./images/icon-close.svg"
+            onclick="closeButton()"
+            id="close"
+            alt="close"
+            srcset=""
+          />
+        </div>
         <div class="navbar">
           <a href="">Pricing</a>
           <a href="">Product</a>
@@ -223,8 +238,12 @@
         <div class="footerThree">
           <div class="footerInput">
             <div class="input">
-              <input type="text" placeholder="Updates in your inbox…" />
-              <button>Go</button>
+              <input
+                type="text"
+                id="text"
+                placeholder="Updates in your inbox…"
+              />
+              <button id="text">Go</button>
             </div>
             <div class="inputError">Invalid</div>
           </div>

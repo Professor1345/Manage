@@ -674,19 +674,20 @@ video {
   }
 }
 
-.navbar {
+.navbar-button {
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+}
+
+.navbar-button img:nth-child(2) {
   display: none;
-}
-
-@media (min-width: 768px) {
-  .navbar {
-    display: flex;
-  }
+  /* @apply size-5; */
 }
 
 .navbar {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 @media (min-width: 768px) {
@@ -709,7 +710,84 @@ video {
   }
 }
 
+.navbar {
+  top: 4rem;
+  left: 24px;
+  right: 24px;
+}
+
+@media (min-width: 640px) {
+  .navbar {
+    left: 36px;
+    right: 36px;
+  }
+}
+
+.navbar {
+  /* Mobile Nav Setting */
+  position: fixed;
+}
+
 @media (min-width: 768px) {
+  .navbar {
+    position: static;
+  }
+}
+
+.navbar {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    background-color: transparent;
+  }
+}
+
+.navbar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    display: flex;
+  }
+}
+
+.navbar {
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    width: auto;
+  }
+}
+
+.navbar {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+.navbar {
+  align-items: center;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    font-weight: 400;
+  }
+
   .navbar a {
     margin-left: 7px;
     margin-right: 7px;
@@ -738,6 +816,19 @@ video {
 .navbar a:hover {
   --tw-text-opacity: 1;
   color: hsl(227 12% 61% / var(--tw-text-opacity));
+}
+
+.navbar a {
+  /* Mobile Nav Setting */
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .navbar a {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 .get-1 {
@@ -3185,8 +3276,16 @@ video {
   order: -9999;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .min-h-\[100vh\] {
