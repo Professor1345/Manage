@@ -206,7 +206,7 @@
     @apply flex flex-row;
     @apply overflow-hidden md:overflow-x-scroll overflow-y-hidden whitespace-nowrap !important;
     @apply max-w-full;
-    @apply px-6 sm:px-9 md:px-0;
+    @apply px-6 sm:px-9 md:px-0 !important;
 
     @apply my-4 md:my-10 lg:my-12  xl:my-14;
     /* @apply justify-center items-center; */
