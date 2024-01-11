@@ -206,7 +206,7 @@
     @apply flex flex-row;
     @apply overflow-hidden md:overflow-x-scroll overflow-y-hidden whitespace-nowrap !important;
     @apply max-w-full;
-    @apply px-0 sm:px-0 md:px-0 !important;
+    @apply px-6 sm:px-9 md:px-0;
 
     @apply my-4 md:my-10 lg:my-12  xl:my-14;
     /* @apply justify-center items-center; */
@@ -219,10 +219,11 @@
     @apply text-[15px] lg:text-base xl:text-base;
     @apply bg-transparent whitespace-normal;
     @apply basis-full;
-    @apply min-w-[48vh] md:min-w-[52vh] lg:min-w-[54vh] xl:min-w-[57vh] !important;
+    @apply min-w-full md:min-w-[33.3%];
+     /* lg:min-w-[54vh] xl:min-w-[57vh] !important; */
     /* md:basis-1/4 w-[25%]; */
     /* @apply max-w-[100vh]; */
-    @apply mx-3 md:mx-3 lg:mx-4;
+    @apply md:mx-3 lg:mx-4;
     @apply pt-9 lg:pt-11;
     /* @apply mx-6 sm:mx-9 md:mx-16 lg:mx-24 xl:mx-[165px]; */
 
@@ -259,6 +260,7 @@
     @apply md:px-5 lg:px-7 xl:px-9;
     @apply text-center;
     @apply py-5 pt-7 md:py-6 lg:py-10 xl:py-12;
+    @apply overflow-auto;
   }
 
   .ftbt-contentName {
@@ -267,6 +269,7 @@
     @apply font-bold;
     @apply my-2 lg:my-3;
   }
+
   .get-3 {
     /* @apply flex justify-center grow-0; */
     @apply text-base md:text-[13px] lg:text-[13px] xl:text-sm;
