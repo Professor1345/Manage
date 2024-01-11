@@ -3159,9 +3159,10 @@ video {
 }
 
 .footerInput .inputError {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  visibility: hidden;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: block;
+  font-style: italic;
 }
 
 .input input {

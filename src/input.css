@@ -532,8 +532,9 @@
   .footerInput .inputError {
     @apply text-[rgb(243,96,60)];
     @apply text-[14px] md:text-[15px];
-    @apply px-5;
-    @apply invisible;
+    @apply px-2;
+    @apply block;
+    @apply italic;
   }
 
   .input input {
