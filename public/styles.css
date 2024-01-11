@@ -2202,6 +2202,10 @@ video {
   background-color: rgb(240 152 130 / var(--tw-bg-opacity));
 }
 
+.get-3 {
+  cursor: pointer;
+}
+
 /* Mobile Design */
 
 .ftbt-container:not(:first-child) {
