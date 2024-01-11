@@ -206,7 +206,7 @@
     @apply flex flex-row;
     @apply overflow-hidden md:overflow-x-scroll overflow-y-hidden whitespace-nowrap !important;
     @apply max-w-full;
-    @apply px-6 sm:px-9 md:px-0 !important;
+    @apply px-0 sm:px-0 md:px-0 !important;
 
     @apply my-4 md:my-10 lg:my-12  xl:my-14;
     /* @apply justify-center items-center; */
@@ -222,7 +222,7 @@
     @apply min-w-[48vh] md:min-w-[52vh] lg:min-w-[54vh] xl:min-w-[57vh] !important;
     /* md:basis-1/4 w-[25%]; */
     /* @apply max-w-[100vh]; */
-    @apply md:mx-3 lg:mx-4;
+    @apply mx-3 md:mx-3 lg:mx-4;
     @apply pt-9 lg:pt-11;
     /* @apply mx-6 sm:mx-9 md:mx-16 lg:mx-24 xl:mx-[165px]; */
 

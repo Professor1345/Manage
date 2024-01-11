@@ -1755,14 +1755,14 @@ video {
 
 .ftb-two {
   max-width: 100%;
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 @media (min-width: 640px) {
   .ftb-two {
-    padding-left: 2.25rem !important;
-    padding-right: 2.25rem !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
 }
 
@@ -1854,6 +1854,8 @@ video {
 .ftbt-container {
   /* md:basis-1/4 w-[25%]; */
   /* @apply max-w-[100vh]; */
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 
 @media (min-width: 768px) {
