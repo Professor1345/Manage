@@ -220,7 +220,7 @@
     @apply bg-transparent whitespace-normal;
     @apply basis-full;
     @apply min-w-full md:min-w-[33.3%];
-     /* lg:min-w-[54vh] xl:min-w-[57vh] !important; */
+    /* lg:min-w-[54vh] xl:min-w-[57vh] !important; */
     /* md:basis-1/4 w-[25%]; */
     /* @apply max-w-[100vh]; */
     @apply md:mx-3 lg:mx-4;
@@ -385,9 +385,10 @@
 
   .footerOne {
     @apply flex flex-col-reverse justify-between md:flex-col;
-    @apply basis-full md:basis-[32%] lg:basis-[30%];
-    @apply bg-green-800;
+    @apply basis-full md:basis-[26%] lg:basis-[30%];
+    /* @apply bg-green-800; */
     @apply items-center md:items-start;
+    /* @apply my-2 md:my-0; */
     /* width="146" height="24" */
     /* @apply w-[110px] h-[14px]  md:w-[125px] md:h-[13px] lg:w-[140px] lg:h-[20px] xl:w-auto xl:h-auto !important; */
     /* @apply my-auto flex justify-center items-center; */
@@ -396,6 +397,7 @@
   .footerOne div img {
     /* width="146" height="24" */
     @apply w-[120px] h-[20px]  md:w-[125px] md:h-[20px] lg:w-[140px] lg:h-[24px] xl:w-auto xl:h-auto !important;
+    @apply my-4 md:my-0;
     /* @apply m-auto md:m-0; */
     /* @apply ; */
   }
@@ -404,26 +406,35 @@
     /* @apply my-2 md:my-2; */
   }
 
-  .footerSocial a {
-    @apply text-lg md:text-xl;
-    @apply mx-2 md:mx-[2px] lg:mx-1;
+  .footerSocial {
+    @apply min-w-full md:min-w-fit;
+    @apply text-2xl md:text-xl;
+    @apply mx-0;
+    @apply flex justify-around md:block;
+    @apply my-4 md:my-0;
   }
-  .footerTwo {
-    @apply flex flex-row justify-between md:justify-around;
-    @apply bg-blue-800;
-    @apply basis-full md:basis-[36%] lg:basis-[40%];
+  .footerSocial a {
+    @apply mx-0 md:mx-1 lg:mx-1 xl:mx-1;
+    @apply text-[hsl(13,_100%,_96%)] hover:text-[rgb(243,96,60)];
+  }
+  .footerNav {
+    @apply flex flex-row justify-around sm:justify-between sm:mx-3 md:mx-0 md:justify-around;
+    /* @apply bg-blue-800; */
+    @apply basis-full md:basis-[38%] lg:basis-[40%];
+    @apply my-4 md:my-0;
   }
 
   .footerNavOne,
   .footerNavTwo {
     @apply flex flex-col;
-    @apply text-base md:text-[15px] lg:text-sm xl:text-sm;
-    @apply font-semibold;
+    @apply text-[15px] md:text-[14px] lg:text-sm xl:text-sm;
+    @apply font-normal md:font-semibold;
   }
 
   .footerNavOne a,
   .footerNavTwo a {
     @apply my-1 lg:my-[6px];
+    @apply text-[hsl(13,_100%,_96%)] hover:text-[rgb(243,96,60)];
   }
 
   /* .footerNavTwo {
@@ -433,30 +444,56 @@
   } */
 
   .footerThree {
-    @apply basis-full md:basis-[32%] lg:basis-[30%];
-    @apply bg-yellow-800;
+    @apply basis-full md:basis-[36%] lg:basis-[30%];
+    /* @apply bg-yellow-800; */
     @apply flex flex-col items-center md:justify-between md:items-end;
   }
 
+  .footerInput {
+    /* @apply bg-gray-500; */
+    @apply min-w-full md:min-w-0;
+    @apply my-4 md:my-0;
+  }
   .footerThree .input {
+    @apply flex justify-normal md:justify-end;
+    /* @apply bg-blue-300; */
+    @apply min-w-full md:min-w-0;
+  }
+
+  .footerInput .inputError {
+    @apply text-[rgb(243,96,60)];
+    @apply px-5;
   }
 
   .input input {
     @apply text-base md:text-[13px] lg:text-[13px] xl:text-sm;
-    @apply py-2 px-5 md:px-3 lg:px-4 xl:py-3 xl:px-5 bg-[hsl(13,_100%,_96%)] rounded-full;
+    @apply py-2 px-4 sm:py-2 sm:px-5 md:px-3 lg:px-4 xl:py-3 xl:px-5 bg-[hsl(13,_100%,_96%)] rounded-full;
     @apply text-[rgb(243,96,60)];
+    @apply basis-[79.2%] shrink md:basis-0;
+    @apply mr-1;
   }
   .input button {
     @apply text-base md:text-[13px] lg:text-[13px] xl:text-sm;
-    @apply py-2 px-5 md:px-3 lg:px-4 xl:py-3 xl:px-5 bg-[rgb(243,96,60)] rounded-full;
+    @apply py-2 sm:py-2 sm:px-5 md:px-3 lg:px-5 xl:py-3 xl:px-5 bg-[rgb(243,96,60)] rounded-full;
     @apply text-[hsl(13,_100%,_96%)];
+    @apply basis-[19.2%] shrink md:basis-0;
+    @apply ml-1;
   }
   .input div {
   }
 
-  .copyright {
-    @apply text-base md:text-[15px] lg:text-sm xl:text-[13px];
+  .copyrightA {
+    @apply text-base md:text-[13px] lg:text-sm xl:text-[13px];
+    @apply hidden md:flex;
   }
+  .copyrightB {
+    @apply text-[15px] lg:text-sm xl:text-[13px];
+    @apply flex md:hidden;
+    @apply justify-center;
+    @apply my-5;
+  }
+
+  /* HOVER SETTING FOR FOOTER */
 }
 
 @layer utilities {

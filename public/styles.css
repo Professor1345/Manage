@@ -2522,7 +2522,7 @@ video {
 
 @media (min-width: 768px) {
   .footerOne {
-    flex-basis: 32%;
+    flex-basis: 26%;
   }
 }
 
@@ -2533,8 +2533,7 @@ video {
 }
 
 .footerOne {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 101 52 / var(--tw-bg-opacity));
+  /* @apply bg-green-800; */
   align-items: center;
 }
 
@@ -2545,6 +2544,7 @@ video {
 }
 
 .footerOne {
+  /* @apply my-2 md:my-0; */
   /* width="146" height="24" */
   /* @apply w-[110px] h-[14px]  md:w-[125px] md:h-[13px] lg:w-[140px] lg:h-[20px] xl:w-auto xl:h-auto !important; */
   /* @apply my-auto flex justify-center items-center; */
@@ -2578,35 +2578,80 @@ video {
 }
 
 .footerOne div img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footerOne div img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.footerOne div img {
   /* @apply m-auto md:m-0; */
   /* @apply ; */
 }
 
 .footerSocial {
   /* @apply my-2 md:my-2; */
-}
-
-.footerSocial a {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  min-width: 100%
 }
 
 @media (min-width: 768px) {
-  .footerSocial a {
+  .footerSocial {
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+}
+
+.footerSocial {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 768px) {
+  .footerSocial {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
+.footerSocial {
+  margin-left: 0px;
+  margin-right: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+  .footerSocial {
+    display: block;
+  }
+}
+
+.footerSocial {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footerSocial {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
 .footerSocial a {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 @media (min-width: 768px) {
   .footerSocial a {
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
   }
 }
 
@@ -2617,33 +2662,71 @@ video {
   }
 }
 
-.footerTwo {
+@media (min-width: 1280px) {
+  .footerSocial a {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+}
+
+.footerSocial a {
+  --tw-text-opacity: 1;
+  color: hsl(13 100% 96% / var(--tw-text-opacity));
+}
+
+.footerSocial a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(243 96 60 / var(--tw-text-opacity));
+}
+
+.footerNav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+@media (min-width: 640px) {
+  .footerNav {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 768px) {
-  .footerTwo {
+  .footerNav {
+    margin-left: 0px;
+    margin-right: 0px;
     justify-content: space-around;
   }
 }
 
-.footerTwo {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+.footerNav {
+  /* @apply bg-blue-800; */
   flex-basis: 100%;
 }
 
 @media (min-width: 768px) {
-  .footerTwo {
-    flex-basis: 36%;
+  .footerNav {
+    flex-basis: 38%;
   }
 }
 
 @media (min-width: 1024px) {
-  .footerTwo {
+  .footerNav {
     flex-basis: 40%;
+  }
+}
+
+.footerNav {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footerNav {
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -2651,14 +2734,13 @@ video {
   .footerNavTwo {
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 15px;
 }
 
 @media (min-width: 768px) {
   .footerNavOne,
   .footerNavTwo {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
@@ -2680,7 +2762,14 @@ video {
 
 .footerNavOne,
   .footerNavTwo {
-  font-weight: 600;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .footerNavOne,
+  .footerNavTwo {
+    font-weight: 600;
+  }
 }
 
 .footerNavOne a,
@@ -2697,6 +2786,18 @@ video {
   }
 }
 
+.footerNavOne a,
+  .footerNavTwo a {
+  --tw-text-opacity: 1;
+  color: hsl(13 100% 96% / var(--tw-text-opacity));
+}
+
+.footerNavOne a:hover,
+  .footerNavTwo a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(243 96 60 / var(--tw-text-opacity));
+}
+
 /* .footerNavTwo {
     @apply flex flex-col;
     @apply font-semibold;
@@ -2709,7 +2810,7 @@ video {
 
 @media (min-width: 768px) {
   .footerThree {
-    flex-basis: 32%;
+    flex-basis: 36%;
   }
 }
 
@@ -2720,8 +2821,7 @@ video {
 }
 
 .footerThree {
-  --tw-bg-opacity: 1;
-  background-color: rgb(133 77 14 / var(--tw-bg-opacity));
+  /* @apply bg-yellow-800; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2734,7 +2834,56 @@ video {
   }
 }
 
+.footerInput {
+  /* @apply bg-gray-500; */
+  min-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .footerInput {
+    min-width: 0px;
+  }
+}
+
+.footerInput {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footerInput {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
 .footerThree .input {
+  display: flex;
+  justify-content: normal;
+}
+
+@media (min-width: 768px) {
+  .footerThree .input {
+    justify-content: flex-end;
+  }
+}
+
+.footerThree .input {
+  /* @apply bg-blue-300; */
+  min-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .footerThree .input {
+    min-width: 0px;
+  }
+}
+
+.footerInput .inputError {
+  --tw-text-opacity: 1;
+  color: rgb(243 96 60 / var(--tw-text-opacity));
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .input input {
@@ -2767,8 +2916,17 @@ video {
   background-color: hsl(13 100% 96% / var(--tw-bg-opacity));
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .input input {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2797,6 +2955,18 @@ video {
 .input input {
   --tw-text-opacity: 1;
   color: rgb(243 96 60 / var(--tw-text-opacity));
+  flex-shrink: 1;
+  flex-basis: 79.2%;
+}
+
+@media (min-width: 768px) {
+  .input input {
+    flex-basis: 0px;
+  }
+}
+
+.input input {
+  margin-right: 0.25rem;
 }
 
 .input button {
@@ -2829,8 +2999,15 @@ video {
   background-color: rgb(243 96 60 / var(--tw-bg-opacity));
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .input button {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2842,8 +3019,8 @@ video {
 
 @media (min-width: 1024px) {
   .input button {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 
@@ -2859,33 +3036,94 @@ video {
 .input button {
   --tw-text-opacity: 1;
   color: hsl(13 100% 96% / var(--tw-text-opacity));
+  flex-shrink: 1;
+  flex-basis: 19.2%;
+}
+
+@media (min-width: 768px) {
+  .input button {
+    flex-basis: 0px;
+  }
+}
+
+.input button {
+  margin-left: 0.25rem;
 }
 
 .input div {
 }
 
-.copyright {
+.copyrightA {
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
 @media (min-width: 768px) {
-  .copyright {
-    font-size: 15px;
+  .copyrightA {
+    font-size: 13px;
   }
 }
 
 @media (min-width: 1024px) {
-  .copyright {
+  .copyrightA {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width: 1280px) {
-  .copyright {
+  .copyrightA {
     font-size: 13px;
   }
+}
+
+.copyrightA {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .copyrightA {
+    display: flex;
+  }
+}
+
+.copyrightB {
+  font-size: 15px;
+}
+
+@media (min-width: 1024px) {
+  .copyrightB {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .copyrightB {
+    font-size: 13px;
+  }
+}
+
+.copyrightB {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .copyrightB {
+    display: none;
+  }
+}
+
+.copyrightB {
+  justify-content: center;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+/* HOVER SETTING FOR FOOTER */
+
+.order-first {
+  order: -9999;
 }
 
 .flex {
