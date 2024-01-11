@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  * {
+    @apply box-border;
+    /* @apply overflow-hidden */
+  }
   .genPadding {
     @apply px-6 sm:px-9 md:px-16 lg:px-24 xl:px-[165px];
     @apply py-6 sm:py-7 md:py-9 lg:py-14 xl:py-14;
@@ -93,12 +97,13 @@
 
   .genPaddingTB {
     @apply px-6 sm:px-9 md:px-16 lg:px-24 xl:px-[165px];
-    @apply py-6 sm:py-7 md:py-9 lg:py-14 xl:py-14;
+    @apply py-4 sm:py-5 md:py-7 lg:py-11 xl:py-12;
+
     @apply pr-0 sm:pr-0 md:pr-16 lg:pr-24 xl:pr-[165px];
   }
 
   .third-box {
-    @apply bg-slate-500;
+    /* @apply bg-slate-500; */
     @apply flex flex-col md:flex-row justify-between;
   }
   .tb-first {
@@ -108,7 +113,7 @@
     @apply pr-6 sm:pr-9;
   }
   .tbf-header {
-    @apply font-bold text-2xl md:text-xl lg:text-3xl xl:text-[40px] xl:leading-[3rem] !important;
+    @apply font-bold text-2xl md:text-xl lg:text-3xl xl:text-[37px] xl:leading-[3rem] !important;
     @apply my-4 md:my-1 !important;
     @apply text-[hsl(233,_12%,_13%)];
   }
@@ -130,11 +135,13 @@
   }
 
   /* Over-all Container for Third Box Second */
-  .tb-second > div {
+  .tb-second > div:not(:last-child) {
     /* @apply my-3 md:my-6; */
-    @apply my-6 md:my-2 md:mb-4 lg:my-3 lg:mb-6 xl:my-5 xl:mb-9;
+    @apply my-6 md:my-2 md:mb-4 lg:my-3 lg:mb-6 xl:my-5 xl:mb-12;
   }
-
+  .td-second > div:last-child {
+    @apply my-6 md:my-2 md:mb-2 lg:my-3 lg:mb-4 xl:my-5 xl:mb-12 !important;
+  }
   /* Header Container */
   .tb-second div div:nth-child(1) {
     @apply bg-[rgb(255,240,235)] md:bg-transparent;
@@ -152,10 +159,12 @@
   /* Header */
   .tb-second div div div:nth-child(2) {
     @apply text-[hsl(233,_12%,_13%)];
-    @apply ml-2 md:ml-4 lg:ml-5 xl:ml-6;
+    @apply ml-3 md:ml-4 lg:ml-5 xl:ml-6;
     @apply font-bold;
-    @apply self-center my-auto xl:my-1;
+    @apply my-auto xl:my-1;
     @apply text-base lg:text-lg;
+    @apply pr-0 sm:pr-0;
+    @apply text-left;
   }
 
   /* Content */
@@ -165,13 +174,154 @@
     @apply ml-0 md:ml-[75px] lg:ml-20 xl:ml-[90px];
     @apply my-2 md:my-2 lg:my-2 xl:my-2;
     @apply text-center md:text-left;
-    @apply pr-6 sm:pr-9;
+    @apply pr-6 sm:pr-7 lg:pr-9;
+  }
+
+  /* 
+    ===========================
+    FOURTH BOX
+    ===========================
+    */
+
+  .genPaddingFTB {
+    /* @apply px-6 sm:px-9 md:px-16 lg:px-24 xl:px-[165px]; */
+    @apply py-6 sm:py-7 md:py-9 lg:py-20 xl:py-32;
+  }
+
+  .fourth-box {
+    @apply flex flex-col items-center;
+    /* @apply bg-zinc-500; */
+    /* @apply  */
+  }
+
+  .ftb-header {
+    @apply font-bold text-2xl md:text-xl lg:text-3xl xl:text-[37px] xl:leading-[3rem] !important;
+    @apply my-4 md:my-1 !important;
+    @apply text-[hsl(233,_12%,_13%)];
+
+    @apply px-6 sm:px-9 md:px-16 lg:px-24 xl:px-[165px];
+  }
+
+  .ftb-two {
+    @apply flex flex-row;
+    @apply overflow-hidden md:overflow-x-scroll overflow-y-hidden whitespace-nowrap !important;
+    @apply max-w-full;
+    @apply px-6 sm:px-9 md:px-0;
+
+    @apply my-4 md:my-10 lg:my-12  xl:my-14;
+    /* @apply justify-center items-center; */
+    /* @apply px-6 sm:px-9 md:px-16 lg:px-24 xl:px-[165px]; */
+  }
+
+  .ftbt-container {
+    @apply relative overflow-hidden;
+    @apply text-[hsl(227,_12%,_61%)];
+    @apply text-[15px] lg:text-base xl:text-base;
+    @apply bg-transparent whitespace-normal;
+    @apply basis-full;
+    @apply min-w-[48vh] md:min-w-[52vh] lg:min-w-[54vh] xl:min-w-[57vh] !important;
+    /* md:basis-1/4 w-[25%]; */
+    /* @apply max-w-[100vh]; */
+    @apply md:mx-3 lg:mx-4;
+    @apply pt-9 lg:pt-11;
+    /* @apply mx-6 sm:mx-9 md:mx-16 lg:mx-24 xl:mx-[165px]; */
+
+    /* @apply inline-block; */
+    /* @apply text-2xl min-w-[25%]; */
+    @apply flex flex-col items-end justify-stretch;
+  }
+  .ftbt-container:first-child {
+    @apply md:ml-6 lg:ml-8 !important;
+  }
+
+  .ftbt-container:last-child {
+    @apply md:mr-6 lg:mr-8 !important;
+  }
+
+  .ftbt-container img {
+    @apply self-center;
+    /* @apply flex justify-center items-center; */
+    @apply mx-auto;
+    @apply absolute;
+    @apply size-16 lg:size-20;
+    /* @apply right-[42.5%]; */
+    @apply justify-center;
+    /* @apply bottom-0; */
+    @apply top-0;
+    /* @apply z-[9999] overflow-auto; */
+  }
+
+  .ftbt-content {
+    /* @apply self-end content-end; */
+    @apply flex-1;
+    /* @apply bg-blue-400; */
+    @apply bg-[rgb(250,250,250)];
+    @apply md:px-5 lg:px-7 xl:px-9;
+    @apply text-center;
+    @apply py-5 pt-7 md:py-6 lg:py-10 xl:py-12;
+  }
+
+  .ftbt-contentName {
+    @apply text-[hsl(233,_12%,_13%)];
+    @apply text-base lg:text-lg;
+    @apply font-bold;
+    @apply my-2 lg:my-3;
+  }
+  .get-3 {
+    /* @apply flex justify-center grow-0; */
+    @apply text-base md:text-[13px] lg:text-[13px] xl:text-sm;
+    @apply py-2 px-5 xl:py-3 xl:px-8 rounded-full;
+    @apply bg-[rgb(243,96,60)] text-[hsl(13,_100%,_96%)];
+    /* @apply self-center md:self-center !important; */
+    @apply my-4 md:my-0 mb-7 md:mb-0 !important;
+    /* @apply my-2 md:my-1 lg:my-3 xl:my-4; */
+  }
+
+  /* Mobile Design */
+
+  .ftbt-container:not(:first-child) {
+    @apply hidden md:flex;
+  }
+
+  /* .ftbt-container:first-child {
+    @apply target:flex;
+  }
+
+  .ftbt-container:nth-child(2) {
+    @apply target:flex;
+  }
+
+  .ftbt-container:nth-child(3) {
+    @apply target:flex;
+  }
+
+  .ftbt-container:nth-child(4) {
+    @apply target:flex;
+  } */
+
+  .mobileSwitch {
+    @apply flex flex-row md:hidden;
+  }
+
+  .mobileSwitch button {
+    /* @apply bg-[rgb(243,96,60)]; */
+    @apply border border-solid border-[rgb(243,96,60)];
+    @apply size-2;
+    @apply mx-[2px] rounded;
+  }
+  .mobileSwitch button:first-child {
+    @apply bg-[rgb(243,96,60)];
   }
   /* 
     ===========================
     FIFTH BOX
     ===========================
     */
+
+  .genPaddingFifth {
+    @apply px-6 sm:px-9 md:px-16 lg:px-24 xl:px-[165px];
+    @apply py-6 sm:py-7 md:py-9 lg:py-12 xl:py-[58px];
+  }
 
   .fifth-box {
     @apply bg-[rgb(243,96,60)];
@@ -199,7 +349,7 @@
   .ffb-first {
     @apply basis-full md:basis-[45%] text-center md:text-left;
     @apply text-[hsl(13,_100%,_96%)] z-20;
-    @apply font-bold text-3xl md:text-2xl lg:text-3xl xl:text-4xl;
+    @apply font-bold text-3xl md:text-2xl lg:text-3xl xl:text-[40px] xl:leading-10;
     @apply my-4 md:my-0 mt-7 md:mt-0 !important;
   }
 
@@ -211,5 +361,107 @@
     @apply self-center md:self-center !important;
     @apply my-4 md:my-0 mb-7 md:mb-0 !important;
     /* @apply my-2 md:my-1 lg:my-3 xl:my-4; */
+  }
+
+  /* 
+    ===========================
+    SIXTH BOX (FOOTER)
+    ===========================
+    */
+  .genPaddingFooter {
+    @apply px-6 sm:px-9 md:px-16 lg:px-24 xl:px-[165px];
+    @apply py-8 sm:py-8 md:py-9 lg:py-14 xl:py-[66px];
+  }
+
+  .footer {
+    @apply flex flex-col-reverse md:flex-row;
+    @apply justify-normal md:justify-between;
+    @apply text-[hsl(13,_100%,_96%)];
+    @apply bg-[hsl(233,_12%,_13%)];
+  }
+
+  .footerOne {
+    @apply flex flex-col-reverse justify-between md:flex-col;
+    @apply basis-full md:basis-[32%] lg:basis-[30%];
+    @apply bg-green-800;
+    @apply items-center md:items-start;
+    /* width="146" height="24" */
+    /* @apply w-[110px] h-[14px]  md:w-[125px] md:h-[13px] lg:w-[140px] lg:h-[20px] xl:w-auto xl:h-auto !important; */
+    /* @apply my-auto flex justify-center items-center; */
+  }
+
+  .footerOne div img {
+    /* width="146" height="24" */
+    @apply w-[120px] h-[20px]  md:w-[125px] md:h-[20px] lg:w-[140px] lg:h-[24px] xl:w-auto xl:h-auto !important;
+    /* @apply m-auto md:m-0; */
+    /* @apply ; */
+  }
+
+  .footerSocial {
+    /* @apply my-2 md:my-2; */
+  }
+
+  .footerSocial a {
+    @apply text-lg md:text-xl;
+    @apply mx-2 md:mx-[2px] lg:mx-1;
+  }
+  .footerTwo {
+    @apply flex flex-row justify-between md:justify-around;
+    @apply bg-blue-800;
+    @apply basis-full md:basis-[36%] lg:basis-[40%];
+  }
+
+  .footerNavOne,
+  .footerNavTwo {
+    @apply flex flex-col;
+    @apply text-base md:text-[15px] lg:text-sm xl:text-sm;
+    @apply font-semibold;
+  }
+
+  .footerNavOne a,
+  .footerNavTwo a {
+    @apply my-1 lg:my-[6px];
+  }
+
+  /* .footerNavTwo {
+    @apply flex flex-col;
+    @apply font-semibold;
+    @apply text-base md:text-[15px] lg:text-sm xl:text-sm;
+  } */
+
+  .footerThree {
+    @apply basis-full md:basis-[32%] lg:basis-[30%];
+    @apply bg-yellow-800;
+    @apply flex flex-col items-center md:justify-between md:items-end;
+  }
+
+  .footerThree .input {
+  }
+
+  .input input {
+    @apply text-base md:text-[13px] lg:text-[13px] xl:text-sm;
+    @apply py-2 px-5 md:px-3 lg:px-4 xl:py-3 xl:px-5 bg-[hsl(13,_100%,_96%)] rounded-full;
+    @apply text-[rgb(243,96,60)];
+  }
+  .input button {
+    @apply text-base md:text-[13px] lg:text-[13px] xl:text-sm;
+    @apply py-2 px-5 md:px-3 lg:px-4 xl:py-3 xl:px-5 bg-[rgb(243,96,60)] rounded-full;
+    @apply text-[hsl(13,_100%,_96%)];
+  }
+  .input div {
+  }
+
+  .copyright {
+    @apply text-base md:text-[15px] lg:text-sm xl:text-[13px];
+  }
+}
+
+@layer utilities {
+  .ftb-two {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .ftb-two::-webkit-scrollbar {
+    display: flex;
   }
 }
