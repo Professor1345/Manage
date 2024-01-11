@@ -2529,6 +2529,12 @@ video {
 
 @media (min-width: 768px) {
   .footerOne {
+    flex-basis: 32%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footerOne {
     flex-basis: 30%;
   }
 }
@@ -2622,6 +2628,15 @@ video {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .footerTwo {
+    justify-content: space-around;
+  }
+}
+
+.footerTwo {
   --tw-bg-opacity: 1;
   background-color: rgb(30 64 175 / var(--tw-bg-opacity));
   flex-basis: 100%;
