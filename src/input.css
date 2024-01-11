@@ -48,6 +48,8 @@
     @apply text-base md:text-[13px] lg:text-[13px] xl:text-sm;
     @apply py-2 px-5 xl:py-3 xl:px-8 bg-[rgb(243,96,60)] rounded-full;
     @apply text-[hsl(13,_100%,_96%)];
+    @apply shadow-lg shadow-[rgba(243,96,60)]/50;
+    @apply hover:bg-[rgb(240,152,130)];
   }
 
   /* 
@@ -81,6 +83,8 @@
     @apply text-[hsl(13,_100%,_96%)];
     @apply self-center md:self-baseline;
     @apply my-2 md:my-1 lg:my-2 xl:my-3;
+    @apply shadow-lg shadow-[rgba(243,96,60)]/50;
+    @apply hover:bg-[rgb(240,152,130)];
   }
   .sb-second {
     @apply basis-full md:basis-[50%];
@@ -278,6 +282,8 @@
     /* @apply self-center md:self-center !important; */
     @apply my-4 md:my-0 mb-7 md:mb-0 !important;
     /* @apply my-2 md:my-1 lg:my-3 xl:my-4; */
+    @apply shadow-lg shadow-[rgba(243,96,60)]/50;
+    @apply hover:bg-[rgb(240,152,130)];
   }
 
   /* Mobile Design */
@@ -364,6 +370,8 @@
     @apply self-center md:self-center !important;
     @apply my-4 md:my-0 mb-7 md:mb-0 !important;
     /* @apply my-2 md:my-1 lg:my-3 xl:my-4; */
+    @apply shadow-lg shadow-[rgb(187,73,45)]/50 ;
+    @apply hover:bg-[hsl(13,_100%,_100%)];
   }
 
   /* 
@@ -462,7 +470,9 @@
 
   .footerInput .inputError {
     @apply text-[rgb(243,96,60)];
+    @apply text-[14px] md:text-[15px];
     @apply px-5;
+    @apply invisible;
   }
 
   .input input {
@@ -478,6 +488,7 @@
     @apply text-[hsl(13,_100%,_96%)];
     @apply basis-[19.2%] shrink md:basis-0;
     @apply ml-1;
+    @apply hover:bg-[rgb(240,152,130)];
   }
   .input div {
   }
