@@ -1,6 +1,8 @@
-// let button = document.querySelectorAll(".navbar-button");
-// let optionButton = document.querySelector(".navbar-button");
 let navBar = document.getElementsByClassName("navbar");
+
+// Background lightColor for UnderMobile
+let mobileUnder = document.getElementsByClassName("mobileBG")
+
 let openButton = () => {
   let open = document.getElementById("open");
   open.style.display = "none";
@@ -11,6 +13,9 @@ let openButton = () => {
   navBar[0].style.display = "flex";
 //   Overflow setting
 document.querySelector("body").style.overflow = "hidden";
+
+// Background lightColor for UnderMobile
+mobileUnder[0].style.display = "block";
 };
 
 let closeButton = () => {
@@ -23,4 +28,7 @@ let closeButton = () => {
   navBar[0].style.display = "none";
 //   Overflow setting
 document.querySelector("body").style.overflow = "auto";
+
+// Background lightColor for UnderMobile
+mobileUnder[0].style.display = "none";
 };

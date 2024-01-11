@@ -7,6 +7,8 @@
     @apply box-border;
     /* @apply overflow-hidden */
   }
+
+  
   .genPadding {
     @apply px-6 sm:px-9 md:px-16 lg:px-24 xl:px-[165px];
     @apply py-6 sm:py-7 md:py-9 lg:py-14 xl:py-14;
@@ -14,6 +16,35 @@
   .genMargin {
     @apply mx-[24px] sm:mx-9 md:mx-16 lg:mx-24 xl:mx-[165px];
     @apply my-9 sm:my-9 md:my-9 lg:my-14 xl:my-16;
+  }
+
+  /* .bodyDiv img.a {
+    @apply absolute z-10;
+    @apply opacity-10 overflow-hidden;
+    @apply md:w-2/5 top-5 -left-[80%] md:-top-1/3 md:left-auto;
+  } */
+  /* .bodyDiv img.b {
+    @apply absolute z-10 hidden md:block;
+    @apply opacity-10 -right-[25%] bottom-16 w-2/5 overflow-hidden;
+  } */
+
+  .bodyDiv > .a{
+    @apply absolute -z-50 ;
+    @apply top-0 right-0;
+    @apply overflow-hidden;
+    @apply object-[60px,-40px];
+    @apply md:object-[290px,-320px] lg:object-[240px,-260px] xl:object-[190px,-210px];
+    /* @apply translate-x-[80%]; */
+    /* @apply inline-block; */
+  }
+
+  .bodyDiv > .b{
+    @apply absolute -z-50 ;
+    @apply top-[32rem] sm:top-[34em];
+    @apply object-[200px,0px] sm:object-[300px,0px] md:object-[0px,0px];
+    @apply md:top-[70rem] md:-left-[500px];
+    @apply overflow-hidden;
+    @apply block;
   }
 
   /* 
@@ -31,12 +62,19 @@
     /* width="146" height="24" */
     @apply w-[110px] h-[14px]  md:w-[125px] md:h-[13px] lg:w-[140px] lg:h-[20px] xl:w-auto xl:h-auto !important;
     @apply my-auto flex justify-center items-center;
+
+    /* Background Drop for Mobile View */
+    @apply z-50 md:z-auto;
   }
   .navbar-button {
     @apply flex md:hidden;
     @apply size-5;
     @apply cursor-pointer;
+
+    /* Background Drop for Mobile View */
+    @apply z-50 md:z-auto;
   }
+
   .navbar-button img:nth-child(2) {
     @apply hidden;
     /* @apply size-5; */
@@ -47,6 +85,7 @@
 
     /* Mobile Nav Setting */
     @apply fixed md:static;
+    /* @apply relative; */
     @apply bg-slate-100 md:bg-transparent;
     @apply hidden md:flex;
     @apply flex-col md:flex-row;
@@ -54,10 +93,18 @@
     @apply py-10 md:py-0;
     @apply items-center;
     @apply font-bold md:font-normal;
+    @apply z-50 md:z-auto;
+  }
+
+  .mobileBG {
+    @apply hidden md:hidden;
+    @apply fixed z-40 top-0 left-0 w-full h-[100vh];
+    @apply bg-[linear-gradient(to_bottom,rgba(0,0,0,0.05),rgba(0,0,0,0.5))];
+    @apply md:bg-transparent;
   }
   .navbar a {
     @apply md:mx-[7px] lg:mx-5 xl:mx-4;
-    @apply text-[hsl(233,_12%,_13%)] hover:text-[hsl(227,_12%,_61%)];
+    @apply text-[hsl(233,_12%,_13%)] hover:text-[hsl(227,12%,61%)];
 
     /* Mobile Nav Setting */
     @apply my-3 md:my-0;
@@ -170,7 +217,7 @@
     @apply bg-[rgb(255,240,235)] md:bg-transparent;
     @apply rounded-l-full;
     @apply flex flex-row;
-    @apply z-30;
+    @apply z-20;
   }
   /* Header Number */
   .tb-second div div div:nth-child(1) {
@@ -368,13 +415,7 @@
     @apply absolute z-10 hidden md:block;
     @apply opacity-10 -right-[25%] bottom-16 w-2/5 overflow-hidden;
   }
-  /* .pre-fifthBox{
-    @apply bg-[rgb(243,96,60)] min-w-full;
-  } */
-  /* .fifth-box::before{
-    @apply content-[''] absolute z-20 min-h-[50px] text-blue-500 min-w-full bg-[url('./images/bg-tablet-pattern.svg')];
-    @apply bg-cover bg-no-repeat bg-center;
-  } */
+
   .ffb-first {
     @apply basis-full md:basis-[45%] text-center md:text-left;
     @apply text-[hsl(13,_100%,_96%)] z-20;
@@ -535,4 +576,10 @@
   .ftb-two::-webkit-scrollbar {
     display: flex;
   }
+  .bodyDiv, body{
+    overflow-x: hidden !important;
+    }
+    /* .bodyDiv > .a{
+      object-position: 190px -210px;
+    } */
 }
