@@ -948,7 +948,7 @@ video {
 
 .navbar a {
   --tw-text-opacity: 1;
-  color: hsl(233 12% 13% / var(--tw-text-opacity));
+  color: rgb(36 45 82 / var(--tw-text-opacity));
 }
 
 .navbar a:hover {
@@ -1107,7 +1107,7 @@ video {
 
 .sb-header {
   --tw-text-opacity: 1;
-  color: hsl(233 12% 13% / var(--tw-text-opacity));
+  color: rgb(36 45 82 / var(--tw-text-opacity));
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -1523,7 +1523,7 @@ video {
 
 .tbf-header {
   --tw-text-opacity: 1;
-  color: hsl(233 12% 13% / var(--tw-text-opacity));
+  color: rgb(36 45 82 / var(--tw-text-opacity));
 }
 
 .tbf-content {
@@ -1712,7 +1712,7 @@ video {
 
 .tb-second div div div:nth-child(2) {
   --tw-text-opacity: 1;
-  color: hsl(233 12% 13% / var(--tw-text-opacity));
+  color: rgb(36 45 82 / var(--tw-text-opacity));
   margin-left: 0.75rem;
 }
 
@@ -1958,7 +1958,7 @@ video {
 
 .ftb-header {
   --tw-text-opacity: 1;
-  color: hsl(233 12% 13% / var(--tw-text-opacity));
+  color: rgb(36 45 82 / var(--tw-text-opacity));
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
@@ -2242,7 +2242,7 @@ video {
 
 .ftbt-contentName {
   --tw-text-opacity: 1;
-  color: hsl(233 12% 13% / var(--tw-text-opacity));
+  color: rgb(36 45 82 / var(--tw-text-opacity));
   font-size: 1rem;
   line-height: 1.5rem;
 }
@@ -2768,7 +2768,7 @@ video {
   --tw-text-opacity: 1;
   color: hsl(13 100% 96% / var(--tw-text-opacity));
   --tw-bg-opacity: 1;
-  background-color: hsl(233 12% 13% / var(--tw-bg-opacity));
+  background-color: rgb(36 45 82 / var(--tw-bg-opacity));
 }
 
 .footerOne {

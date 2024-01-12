@@ -104,7 +104,7 @@
   }
   .navbar a {
     @apply md:mx-[7px] lg:mx-5 xl:mx-4;
-    @apply text-[hsl(233,_12%,_13%)] hover:text-[hsl(227,12%,61%)];
+    @apply text-[rgb(36,45,82)] hover:text-[hsl(227,12%,61%)];
 
     /* Mobile Nav Setting */
     @apply my-3 md:my-0;
@@ -133,7 +133,7 @@
   .sb-header {
     @apply font-bold text-3xl md:text-[25px] lg:text-[34px] xl:text-[54px] xl:leading-tight;
     @apply text-center md:text-left;
-    @apply text-[hsl(233,_12%,_13%)];
+    @apply text-[rgb(36,45,82)];
     @apply my-2 md:my-1 lg:my-2 xl:my-3;
   }
   .sb-content {
@@ -185,7 +185,7 @@
   .tbf-header {
     @apply font-bold text-2xl md:text-xl lg:text-3xl xl:text-[37px] xl:leading-[3rem] !important;
     @apply my-4 md:my-1 !important;
-    @apply text-[hsl(233,_12%,_13%)];
+    @apply text-[rgb(36,45,82)];
   }
   .tbf-content {
     @apply text-[hsl(227,_12%,_61%)];
@@ -228,7 +228,7 @@
 
   /* Header */
   .tb-second div div div:nth-child(2) {
-    @apply text-[hsl(233,_12%,_13%)];
+    @apply text-[rgb(36,45,82)];
     @apply ml-3 md:ml-4 lg:ml-5 xl:ml-6;
     @apply font-bold;
     @apply my-auto xl:my-1;
@@ -267,7 +267,7 @@
   .ftb-header {
     @apply font-bold text-2xl md:text-xl lg:text-3xl xl:text-[37px] xl:leading-[3rem] !important;
     @apply my-4 md:my-1 !important;
-    @apply text-[hsl(233,_12%,_13%)];
+    @apply text-[rgb(36,45,82)];
 
     @apply px-6 sm:px-9 md:px-16 lg:px-24 xl:px-[165px];
   }
@@ -334,7 +334,7 @@
   }
 
   .ftbt-contentName {
-    @apply text-[hsl(233,_12%,_13%)];
+    @apply text-[rgb(36,45,82)];
     @apply text-base lg:text-lg;
     @apply font-bold;
     @apply my-2 lg:my-3;
@@ -449,7 +449,7 @@
     @apply flex flex-col-reverse md:flex-row;
     @apply justify-normal md:justify-between;
     @apply text-[hsl(13,_100%,_96%)];
-    @apply bg-[hsl(233,_12%,_13%)];
+    @apply bg-[rgb(36,45,82)];
   }
 
   .footerOne {
