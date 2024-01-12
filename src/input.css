@@ -454,7 +454,7 @@
 
   .footerOne {
     @apply flex flex-col-reverse justify-between md:flex-col;
-    @apply basis-full md:basis-[26%] lg:basis-[30%];
+    @apply basis-full md:basis-[26%] lg:basis-[25%];
     /* @apply bg-green-800; */
     @apply items-center md:items-start;
     /* @apply my-2 md:my-0; */
@@ -489,7 +489,7 @@
   .footerNav {
     @apply flex flex-row justify-around sm:justify-between sm:mx-3 md:mx-0 md:justify-around;
     /* @apply bg-blue-800; */
-    @apply basis-full md:basis-[38%] lg:basis-[40%];
+    @apply basis-full md:basis-[38%] lg:basis-[45%];
     @apply my-4 md:my-0;
   }
 

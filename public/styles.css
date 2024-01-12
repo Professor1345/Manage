@@ -2795,7 +2795,7 @@ video {
 
 @media (min-width: 1024px) {
   .footerOne {
-    flex-basis: 30%;
+    flex-basis: 25%;
   }
 }
 
@@ -2981,7 +2981,7 @@ video {
 
 @media (min-width: 1024px) {
   .footerNav {
-    flex-basis: 40%;
+    flex-basis: 45%;
   }
 }
 
