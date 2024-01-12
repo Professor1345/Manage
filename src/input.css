@@ -449,7 +449,7 @@
     @apply flex flex-col-reverse md:flex-row;
     @apply justify-normal md:justify-between;
     @apply text-[hsl(13,_100%,_96%)];
-    @apply bg-[rgb(36,45,82)];
+    @apply bg-[hsl(233,_12%,_13%)];
   }
 
   .footerOne {
